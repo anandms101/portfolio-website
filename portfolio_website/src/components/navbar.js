@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 function NavBar() {
   return (
     <>
-      <Navbar ticky="top"  bg="dark" variant="dark">
+      <Navbar ticky="top"  bg="light" variant="light">
         <Container>
           <Navbar.Brand href="#home">Anand MS</Navbar.Brand>
           <Nav className="d-flex" >
