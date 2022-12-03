@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 function About() {
   return (
     <section>
-      <Container fluid className="about-section" id="about">
+      {/* <Container fluid className="about-section" id="about"> */}
         <Container className="about-content">
           <h2>About me</h2>
           <p>
@@ -23,7 +23,7 @@ function About() {
             sint occaecat deserunt.
           </p>
         </Container>
-      </Container>
+      {/* </Container> */}
     </section>
   );
 }

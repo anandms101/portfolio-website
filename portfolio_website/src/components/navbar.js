@@ -7,12 +7,12 @@ function NavBar() {
     <>
       <Navbar sticky="top"  bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home">Anand MS</Navbar.Brand>
+          <Navbar.Brand href="/home">Anand MS</Navbar.Brand>
           <Nav className="d-flex" >
-            <Nav.Link href="#home">About me</Nav.Link>
-            <Nav.Link href="#features">Resume</Nav.Link>
-            <Nav.Link href="#pricing">Projects</Nav.Link>
-            <Nav.Link href="#pricing">Contact Me</Nav.Link>
+            <Nav.Link href="/about">About me</Nav.Link>
+            <Nav.Link href="/resume">Resume</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/contactUs">Contact Me</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
