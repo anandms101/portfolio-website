@@ -5,6 +5,7 @@ import Type from "./type";
 import homePageAvatar from "/Users/anandms/Documents/portfolio-website/portfolio_website/src/Assests/homePageAvatar.svg";
 import WaveEffect from "./wave";
 import Image from "react-bootstrap/Image";
+import HomeSecond from "./homePageSecondHalf";
 
 function Home() {
   return (
@@ -41,7 +42,10 @@ function Home() {
           </Row>
         </Container>
       </Container>
-    </section>
+      <HomeSecond />
+    </section>      
+
+
   );
 }
 
