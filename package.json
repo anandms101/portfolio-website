@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "tsparticles": "^2.5.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
-}
