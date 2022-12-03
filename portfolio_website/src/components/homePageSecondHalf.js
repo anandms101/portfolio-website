@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import profilePic from "/Users/anandms/Documents/portfolio-website/portfolio_website/src/Assests/ProfilePic2.jpg";
 import {
   GithubFilled,
   InstagramFilled,
@@ -7,28 +8,40 @@ import {
   CodeOutlined,
   LaptopOutlined,
   LinkedinFilled,
+  MailFilled,
 } from "@ant-design/icons";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { Icon } from "@iconify/react";
-function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+function HomeSecond() {
   return (
-    <>
-      <Navbar fixed="bottom" bg="light" variant="light">
-        <Container id="footer-container">
-          <h6>
-            Designed and Developed with{" "}
-            <span id="heartIcon">
-              <HeartFilled />
-            </span>
-            by Anand
-          </h6>
-
-          <h6>Copyright © {year} Anand MS</h6>
-          <Nav className="d-flex">
-            <div id="socialIconsFooter">
+    <section>
+      <Container fluid className="home-sectionSecond" id="home">
+        <Container className="home-contentSecond">
+          <Row>
+            <Col md={4}>
+              <img
+                src={profilePic}
+                alt="ProfilePic"
+                className="img-fluid"
+                style={{
+                  marginTop: "3%",
+                  width: 200,
+                  height: 200,
+                  borderRadius: 200 / 2,
+                }}
+              />
+            </Col>
+            <Col md={8}>
+              <h1> A little bit about myself</h1>
+              <p>Consectetur consectetur id aliquip ullamco nostrud.</p>
+              <p>Consectetur consectetur id aliquip ullamco nostrud.</p>
+              <p>Consectetur consectetur id aliquip ullamco nostrud.</p>
+              <p>Consectetur consectetur id aliquip ullamco nostrud.</p>
+            </Col>
+          </Row>
+          <Row id="socialConnectionIconsHomePage">
+            <Col md={12}>
+              <h1>FIND ME ON</h1>
+              <p>You can connect me on</p>
               <a
                 href="https://github.com/anandms101"
                 target="_blank"
@@ -37,7 +50,7 @@ function Footer() {
               >
                 <GithubFilled />
               </a>
-              <a
+              {/* <a
                 href="https://leetcode.com/anand_ms/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -52,7 +65,7 @@ function Footer() {
                 className="socialIcons"
               >
                 <Icon icon="cib:hackerrank" />
-              </a>
+              </a> */}
               <a
                 href="https://stackoverflow.com/users/12179934/anand-ms"
                 target="_blank"
@@ -74,11 +87,8 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="socialIcons"
-                id="mailIconFooter"
               >
-                <Icon icon="clarity:email-solid" />
-                {/* <Icon icon="material-symbols:mail width="32" /> */}
-                {/* <Icon icon="ic:baseline-email" height="24" /> */}
+                <Icon icon="material-symbols:mail" />
               </a>
               <a
                 href="https://instagram.com/anand__ms"
@@ -88,12 +98,12 @@ function Footer() {
               >
                 <InstagramFilled />
               </a>
-            </div>
-          </Nav>
+            </Col>
+          </Row>
         </Container>
-      </Navbar>
-    </>
+      </Container>
+    </section>
   );
 }
 
-export default Footer;
+export default HomeSecond;
