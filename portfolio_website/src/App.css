@@ -116,3 +116,17 @@ margin-top: 15%;
 }
 
 
+/* about  */
+#technologyCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(238, 236, 236, 0.357);
+  border-radius: 30px;
+}
+
+#technologyCard  h6{
+  margin-top: 3%;
+  /* margin-left: -8%; */
+}
+
